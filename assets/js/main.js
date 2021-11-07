@@ -47,6 +47,8 @@ accordionItems.forEach((item) => {
   const accordionHeader = item.querySelector('.questions__header');
 
   accordionHeader.addEventListener('click', () => {
+    //!На question-header я вешаю слушателя , так как я на него кликаю
+    
     const openItem = document.querySelector('.accordion-open');
 
     toggleItem(item);
